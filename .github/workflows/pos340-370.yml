@@ -65,31 +65,9 @@ jobs:
         run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_dSDgdcFcDO7WxNJT0aZTyXYGKgZl/vt0RHgtShd
       - name: 326 Run a one-line script
         run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_dSDgdcFcDO7WxNJT0aZTyXYGKgZl/vt0RHgtShd
+
+
         
-
-
-name: HM121-140-hun 
-on:  
-  push:
-  pull_request:
-  workflow_dispatch:  
-  schedule:
-  - cron: "*/10 * * * *"
-  
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 3000
-      fail-fast: false
-      matrix:
-        go: [1.1]
-        flag: [A]
-    env:
-        NUM_JOBS: 1000
-        JOB: ${{ matrix.go }}
-    steps:
-      - uses: actions/checkout@v3
       - name: Run a one-line script
         run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_lxorWJpbK3q9Tf1v963pcPcUPzz4/6PwclwRD7Q
       - name: Run a one-line script
